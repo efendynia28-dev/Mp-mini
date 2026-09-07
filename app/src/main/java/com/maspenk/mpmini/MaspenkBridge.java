@@ -1,0 +1,3 @@
+package com.maspenk.mpmini;
+import android.webkit.JavascriptInterface;
+public class MaspenkBridge { final MainActivity a; MaspenkBridge(MainActivity a){this.a=a;} @JavascriptInterface public void toast(String s){a.toast(s);} @JavascriptInterface public void camera(){a.camera();} @JavascriptInterface public void pickFile(){a.pickFile();} @JavascriptInterface public void gps(){a.gps();} @JavascriptInterface public void notify(String t,String m){a.notifyNative(t,m);} @JavascriptInterface public void share(String s){a.share(s);} @JavascriptInterface public void download(String u){a.download(u);} @JavascriptInterface public void openDeepLink(String u){a.openDeepLink(u);} }
